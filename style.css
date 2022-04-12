@@ -72,7 +72,8 @@ form input{
 }
 .required-field::after {
     content: "*";
-    color: red;
+    margin-left: 4px;
+    color: rgba(255, 0, 0, 0.665);
 }
 
 .resident{
