@@ -4,18 +4,25 @@ const email = document.getElementById('email');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-    let messages = [];
-    
     if(username.value === ' ' || username.value == null){
-        messages.push('Name is required');
+        alert(' Your Name is required');
+    }
+    else if( username.value.length < 8){
+        alert(' Your full name is required');
     }
 
-    if(messages.length > 0){ 
-        e.preventDefault();
-        errorElement.innerText = messages.join(', ')
-    }
-    if(email.value === ' ' || email.value == null){
-        messages.push('Email is required');
-        return messages;
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+    if (email.value.match(validRegex)) {
+
+    alert("Valid email address!");
+      return true;
+
+    } else {
+  
+        alert("Invalid email address!");
+        return false;
+  
     }
 });
+  

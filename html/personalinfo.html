@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Your Purchase</title>
     <link rel="stylesheet" href="/style.css">
-    <script defer src="script.js."></script>
 </head>
 <body>
     <section>
@@ -19,18 +18,15 @@
                 <span class="slider3">Confirm Payment</span>
             </div>
         </div>
-        <div id="error"></div>
-        <form action="" method="GET" id="form">
-            <div class="input-control">
+        <span id="error"></span>
+        <form action="/html/billingInfo.html" method="get" id="form">
                 <label for="name">Name</label><br>
                     <input type="text" name="" id="name" required><br>
-            </div>
 
-            <div class="input-control">
                 <label for="Email" required>Email Address</label>
                 <span>The purchase reciept would be sent to this address</span>
                     <input type="email" name="" id="email"><br>
-            </div>
+
 
             <div class="input-control">
                 <label for="address">Address 1</label><br>
@@ -66,5 +62,7 @@
         </form>
      </div>
     </section>
+
+    <script src="/script.js"></script>
 </body>
 </html>
