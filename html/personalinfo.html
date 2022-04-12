@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Your Purchase</title>
     <link rel="stylesheet" href="/style.css">
+    <script defer src="script.js."></script>
 </head>
 <body>
     <section>
@@ -12,48 +13,45 @@
         <!-- <img src="/img/Vector 55.png" alt=""> -->
         <div class="top">
             <span class="header">Complete your Purchase</span> <br>
-            <div class="slider">
+            <div class="slider"> 
                 <span class="slider1">Personal Info</span>
                 <span class="slider2">Billing Info</span>
                 <span class="slider3">Confirm Payment</span>
             </div>
         </div>
-
-        <form action="/html/billingInfo.html">
-            <div class="name">
+        <div id="error"></div>
+        <form action="" method="GET" id="form">
+            <div class="input-control">
                 <label for="name">Name</label><br>
                     <input type="text" name="" id="name" required><br>
-                    <div class="error"></div>
             </div>
 
-            <div class="email">
-                <label for="Email" required>Email Address</label><br>
+            <div class="input-control">
+                <label for="Email" required>Email Address</label>
+                <span>The purchase reciept would be sent to this address</span>
                     <input type="email" name="" id="email"><br>
-                    <div class="error"></div>
             </div>
 
-            <div class="Address 1">
+            <div class="input-control">
                 <label for="address">Address 1</label><br>
                     <input type="text" name="" id="address"><br>
-                    <div class="error"></div>
             </div>
 
-            <div class="address">
+            <div class="input-control">
                 <label for="address">Address 2</label><br>
                     <input type="text" name="" id="address"><br>
-                    <div class="error"></div>
             </div>
 
-            <div class="resident">
+            <div class="resident input-control">
                 <div class="localgov">
                 <label for="localgov">Local Government</label><br>
                 <input type="text" name="" id="localgov"><br>
-                <div class="error"></div>
                 </div>
 
                 <div class="state">
                     <label for="state">State</label><br>
                <select name="state" id="">
+                   <option value="">Pick one</option>
                     <option value="">Lagos</option>
                     <option value="">Ogun</option>
                     <option value="">Ondo</option>
